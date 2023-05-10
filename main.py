@@ -19,7 +19,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 df = pd.read_csv(r'data/covid_worldwide.csv')
-covid = pd.read_csv(r'WHO-COVID-19-global-data.csv')
+covid = pd.read_csv(r'data/WHO-COVID-19-global-data.csv')
 df1 = Preprocess.preprocess(df)
 country = Helper.country(df1)
 st.sidebar.image('https://www.sakraworldhospital.com/spl_splimgs/antigen-test-labs-bangalore.jpg')
